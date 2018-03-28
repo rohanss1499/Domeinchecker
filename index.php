@@ -4,7 +4,6 @@ require_once('domeincheck.php');
 
 if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
 	$domain = $_GET['domain'];
-
     //Request the availability of a domain by using the Transip_DomainService API;
     //we can get the following different statusses back with different meanings.
     function checkAvailability($url) {
@@ -25,7 +24,6 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
         }
         return $result;
     }
-
 			try
 			{
 			$result_tld = [];
@@ -36,7 +34,6 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
                     "url"   => $pieces[0] . '.' . $value,
                     "available"=> checkAvailability($pieces[0] . '.' . $value)
                 ];
-
 				}
             };
 		}
