@@ -10,16 +10,16 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
         $availability = Transip_DomainService::checkAvailability($url);
         switch($availability){
             case Transip_DomainService::AVAILABILITY_INYOURACCOUNT:
-                $result = htmlspecialchars($url) . 'is niet beschikbaar.';
+                $result = htmlspecialchars($url). ' niet beschikbaar.';
                 break;
             case Transip_DomainService::AVAILABILITY_UNAVAILABLE:
-                $result = htmlspecialchars($url) . ' is niet beschikbaar voor verhuizing.';
+                $result = htmlspecialchars($url). ' niet beschikbaar voor verhuizing.';
                 break;
             case Transip_DomainService::AVAILABILITY_FREE:
-                $result = htmlspecialchars($url) . ' is beschikbaar voor registratie.';
+                $result = htmlspecialchars($url). ' beschikbaar voor registratie.';
                 break;
             case Transip_DomainService::AVAILABILITY_NOTFREE:
-                $result = htmlspecialchars($url) . ' is geregistreerd. Als je de eigenaar bent kun je het verhuizen.';
+                $result = htmlspecialchars($url). ' geregistreerd. Als je de eigenaar bent kun je het verhuizen.';
                 break;
         }
         return $result;
@@ -97,12 +97,17 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-lg-12">
+						<div class="col-lg-12 col-md-12 ">
 							<p>
 								<?php
-                                foreach($result_tld as $value){
-                                    echo $value['available'].'<br>';
+                                if(isset($_GET['domain']) && strlen($_GET['domain']) > 0) {
+                                    foreach ($result_tld as $value) {
+                                        echo $value['available'] . '<br>';
+                                    }
                                 }
+                                    else {
+                                        $value = '';
+                                    }
 								?>
 							</p>
 						</div>
