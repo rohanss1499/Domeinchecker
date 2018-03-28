@@ -13,7 +13,7 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
                 $result = ' beschikbaar';
                 break;
             case Transip_DomainService::AVAILABILITY_NOTFREE:
-                $result = ' niet beschikbaar';
+                $result = ' in bezit';
                 break;
         }
         return $result;
