@@ -107,7 +107,7 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
                                             echo "<tr>";
                                             echo "<td>" . $value['url'] . "</td>";
                                             echo "<td>" . $value['available'] . "</td>";
-                                            echo "<td>" . "<button>" . $value['available'] . "</button>" ."</td>";
+                                            echo "<td>" . "<button></button>" ."</td>";
                                             echo "</tr>";
                                         }
                                     } else {
