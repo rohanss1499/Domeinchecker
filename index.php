@@ -4,32 +4,41 @@ require_once('domeincheck.php');
 
 if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
 	$domain = $_GET['domain'];
+
+    //Request the availability of a domain by using the Transip_DomainService API;
+    //we can get the following different statusses back with different meanings.
+    function checkAvailability($url) {
+        $availability = Transip_DomainService::checkAvailability($url);
+        switch($availability){
+            case Transip_DomainService::AVAILABILITY_INYOURACCOUNT:
+                $result = htmlspecialchars($url) . 'is niet beschikbaar.';
+                break;
+            case Transip_DomainService::AVAILABILITY_UNAVAILABLE:
+                $result = htmlspecialchars($url) . ' is niet beschikbaar voor verhuizing.';
+                break;
+            case Transip_DomainService::AVAILABILITY_FREE:
+                $result = htmlspecialchars($url) . ' is beschikbaar voor registratie.';
+                break;
+            case Transip_DomainService::AVAILABILITY_NOTFREE:
+                $result = htmlspecialchars($url) . ' is geregistreerd. Als je de eigenaar bent kun je het verhuizen.';
+                break;
+        }
+        return $result;
+    }
+
 			try
 			{
 			$result_tld = [];
 			if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
 			$pieces = explode(".", $domain);
 			foreach($tldList as $value) {
-			array_push($result_tld, $pieces[0] . '.' . $value);
+                $result_tld[] = [
+                    "url"   => $pieces[0] . '.' . $value,
+                    "available"=> checkAvailability($pieces[0] . '.' . $value)
+                ];
+
 				}
-			}; 
-			//Request the availability of a domain by using the Transip_DomainService API;
-			//we can get the following different statusses back with different meanings.
-			$availability = Transip_DomainService::checkAvailability($result_tld);
-			($availability){
-				case Transip_DomainService::AVAILABILITY_INYOURACCOUNT:
-					$result = htmlspecialchars($result_tld). 'is niet beschikbaar.';
-				break;
-				case Transip_DomainService::AVAILABILITY_UNAVAILABLE:
-					$result = htmlspecialchars($result_tld). ' is niet beschikbaar voor verhuizing.';
-				break;
-				case Transip_DomainService::AVAILABILITY_FREE:
-					$result = htmlspecialchars($result_tld). ' is beschikbaar voor registratie.';
-				break;
-				case Transip_DomainService::AVAILABILITY_NOTFREE:
-					$result = htmlspecialchars($result_tld). ' is geregistreerd. Als je de eigenaar bent kun je het verhuizen.';
-				break;
-				}
+            };
 		}
 		catch(SoapFault $e)
 			{
@@ -94,9 +103,9 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
 						<div class="col-lg-12">
 							<p>
 								<?php
-								foreach ($result_tld as $value) {
-									echo $value . "<br>";
-								}
+                                foreach($result_tld as $value){
+                                    echo $value['available'].'<br>';
+                                }
 								?>
 							</p>
 						</div>
