@@ -9,17 +9,11 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
     function checkAvailability($url) {
         $availability = Transip_DomainService::checkAvailability($url);
         switch($availability){
-            case Transip_DomainService::AVAILABILITY_INYOURACCOUNT:
-                $result = htmlspecialchars($url). ' niet beschikbaar.';
-                break;
-            case Transip_DomainService::AVAILABILITY_UNAVAILABLE:
-                $result = htmlspecialchars($url). ' niet beschikbaar voor verhuizing.';
-                break;
             case Transip_DomainService::AVAILABILITY_FREE:
-                $result = htmlspecialchars($url). ' beschikbaar voor registratie.';
+                $result = ' beschikbaar';
                 break;
             case Transip_DomainService::AVAILABILITY_NOTFREE:
-                $result = htmlspecialchars($url). ' geregistreerd. Als je de eigenaar bent kun je het verhuizen.';
+                $result = ' niet beschikbaar';
                 break;
         }
         return $result;
@@ -32,7 +26,7 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
 			foreach($tldList as $value) {
                 $result_tld[] = [
                     "url"   => $pieces[0] . '.' . $value,
-                    "available"=> checkAvailability($pieces[0] . '.' . $value)
+                    "available"=> checkAvailability($pieces[0] . '.' . $value),
                 ];
 				}
             };
@@ -97,19 +91,31 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-lg-12 col-md-12 ">
-							<p>
-								<?php
-                                if(isset($_GET['domain']) && strlen($_GET['domain']) > 0) {
-                                    foreach ($result_tld as $value) {
-                                        echo $value['available'] . '<br>';
-                                    }
-                                }
-                                    else {
+						<div class="col-lg-12">
+                            <?php
+                                echo "<table class=\"table table-hover\" id=\"dev-table\" >";
+                                echo "<thead>";
+                                echo "<tr>";
+                                    echo "<th>"."Domain"."</th>";
+                                    echo "<th>"."Status"."</th>";
+                                    echo "<th>"."Actie"."</th>";
+                                    echo "<tr>";
+                                    echo "</thead>";
+                                    echo "</tbody>";
+                                    if(isset($_GET['domain']) && strlen($_GET['domain']) > 0) {
+                                        foreach ($result_tld as $value) {
+                                            echo "<tr>";
+                                            echo "<td>" . $value['url'] . "</td>";
+                                            echo "<td>" . $value['available'] . "</td>";
+                                            echo "<td>" . "<button>" . $value['available'] . "</button>" ."</td>";
+                                            echo "</tr>";
+                                        }
+                                    } else {
                                         $value = '';
                                     }
-								?>
-							</p>
+                                    echo "</tbody>";
+                                    echo "</table>";
+                                    ?>
 						</div>
 					</div>
 				</div>
