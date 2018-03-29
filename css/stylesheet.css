@@ -102,9 +102,6 @@ header {
   -webkit-transform:translate(-50%, -50%);
   -ms-transform:translate(-50%, -50%);
   clear:both;
-
-
-
 	 }
 
 .submenu { 
@@ -151,9 +148,9 @@ header {
   left:0; 
   background:#222; 
   height:60px; 
-  box-shadow: 0 5px 15px -10px black;
-  font-family: 'Open Sans', sans-serif;  
-  clear: both;
+  box-shadow:0 5px 15px -10px black;
+  font-family:'Open Sans', sans-serif;
+  clear:both;
 }
 #phone { 
   position:absolute; 
@@ -163,9 +160,9 @@ header {
   font-size:19px; 
   font-weight:300; 
   color:white;padding:13px 15px; /*box-shadow: 0px 5px 15px -8px black;*/  
-  background-image: url("https://compleet.it/v3/img/icons/phone.png"); 
-  background-repeat: no-repeat; 
-  background-position: left center; 
+  background-image:url("https://compleet.it/v3/img/icons/phone.png");
+  background-repeat:no-repeat;
+  background-position:left center;
   padding-left:40px;
 }
 #email { 
@@ -178,14 +175,14 @@ header {
   font-weight:300; 
   color:white;
   padding:13px 15px; /*box-shadow: 0px 5px 15px -8px black;*/  
-  background-image: url("https://compleet.it/v3/img/icons/mail.png"); 
-  background-repeat: no-repeat; 
-  background-position: left center; 
+  background-image:url("https://compleet.it/v3/img/icons/mail.png");
+  background-repeat:no-repeat;
+  background-position:left center;
   padding-left:40px;
 }
 #adres { 
   position:absolute; 
-  bottom:5px; 
+  bottom:5px;
   right:30px; 
   width:auto; 
   text-decoration:none; 
