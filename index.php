@@ -37,10 +37,6 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
 			//those errors will be thrown as a SoapFault exception.
 			$result = 'An error occurred: '. htmlspecialchars($e->getMessage());
 		}
-	}
-	else {
-		$domain = '';
-		$result = '';
 	};
 ?>
 <!DOCTYPE html>
@@ -108,7 +104,12 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
                                             echo "<tr>";
                                             echo "<td>" . $value['url'] . "</td>";
                                             echo "<td>" . $value['available'] . "</td>";
-                                            echo "<td>" . "<button></button>" ."</td>";
+                                            if($value['available'] === ' beschikbaar'){
+                                                $button = 'Bestellen';
+                                            } else {
+                                                $button = 'Verhuizen';
+                                            };
+                                            echo "<td>" . "<button class='btn btn-primary result_button'>$button</button>" ."</td>";
                                             echo "</tr>";
                                         }
                                     }else {

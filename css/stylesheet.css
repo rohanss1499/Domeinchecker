@@ -127,7 +127,6 @@ header {
 }
 
 /*#content {  padding:645px 10px 40px 10px; width:100%;  }*/
-
 #slider { 
   height:550px; 
   width:100%; 
@@ -275,6 +274,10 @@ input[type=submit] {
   border:none; 
   color:white; 
   margin-top:12px; 
+}
+
+.result_button {
+    background: #0099d9;
 }
 
 p { 
