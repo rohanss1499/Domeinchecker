@@ -54,8 +54,8 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
 		<link rel="stylesheet" href="css/stylesheet.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<!--JS-->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 	</head>
 	<body>
 		<div id="headerBackground">
@@ -105,20 +105,19 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
                                             echo "<td>" . $value['url'] . "</td>";
                                             echo "<td>" . $value['available'] . "</td>";
                                             if($value['available'] === ' beschikbaar'){
-                                                $button = "<a href='#' class='result_button' style='color: #ffffff'>" .'Bestellen' . "</a>";
+                                                $button = "<a href='#' class='result_button' style='color:#ffffff'>" .'Bestellen' . "</a>";
 
                                             } else {
-                                                $button = "<a href='#' class='result_button' style='color: #ffffff'>" .'Verhuizen' . "</a>";
+                                                $button = "<a href='#' class='result_button' style='color:#ffffff'>" .'Verhuizen' . "</a>";
                                             };
                                             echo "<td>" . "<button class='btn btn-primary result_button'>$button</button>" ."</td>";
                                             echo "</tr>";
                                         }
                                     }else {
                                         $value = '';
-                                    }
+                                    };
                                     echo "</tbody>";
                                     echo "</table>";
-
                                     ?>
 						</div>
 					</div>
