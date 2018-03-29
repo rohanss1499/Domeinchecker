@@ -105,9 +105,10 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
                                             echo "<td>" . $value['url'] . "</td>";
                                             echo "<td>" . $value['available'] . "</td>";
                                             if($value['available'] === ' beschikbaar'){
-                                                $button = 'Bestellen';
+                                                $button = "<a href='#' class='result_button' style='color: #ffffff'>" .'Bestellen' . "</a>";
+
                                             } else {
-                                                $button = 'Verhuizen';
+                                                $button = "<a href='#' class='result_button' style='color: #ffffff'>" .'Verhuizen' . "</a>";
                                             };
                                             echo "<td>" . "<button class='btn btn-primary result_button'>$button</button>" ."</td>";
                                             echo "</tr>";

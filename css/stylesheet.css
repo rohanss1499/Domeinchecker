@@ -278,6 +278,12 @@ input[type=submit] {
 
 .result_button {
     background: #0099d9;
+
+}
+
+a .result_button {
+    background: #0099d9;
+    color: #fff !important;
 }
 
 p { 
@@ -292,8 +298,8 @@ p {
   color:#ff0202; 
 }
 
-a { 
-  color:#292929; 
+a {
+  color: #ffffff; !important;
   font-weight:300; 
   font-size:18px; 
   margin-top:20px;
