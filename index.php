@@ -93,6 +93,7 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
 					<div class="row">
 						<div class="col-lg-12">
                             <?php
+                            if(isset($_GET['domain']) && strlen($_GET['domain']) > 0) {
                                 echo "<table class=\"table table-hover\" id=\"dev-table\" >";
                                 echo "<thead>";
                                 echo "<tr>";
@@ -102,7 +103,7 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
                                     echo "<tr>";
                                     echo "</thead>";
                                     echo "</tbody>";
-                                    if(isset($_GET['domain']) && strlen($_GET['domain']) > 0) {
+
                                         foreach ($result_tld as $value) {
                                             echo "<tr>";
                                             echo "<td>" . $value['url'] . "</td>";
@@ -110,11 +111,12 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
                                             echo "<td>" . "<button></button>" ."</td>";
                                             echo "</tr>";
                                         }
-                                    } else {
+                                    }else {
                                         $value = '';
                                     }
                                     echo "</tbody>";
                                     echo "</table>";
+
                                     ?>
 						</div>
 					</div>
