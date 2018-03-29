@@ -6,11 +6,11 @@
 
 html { 
   background:#333333;   
-  background: url(../img/blurred.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; 
+  background:url(../img/blurred.jpg) no-repeat center center fixed;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
   margin:0; 
   padding:0; 
 }
@@ -21,18 +21,19 @@ body {
 
 #containerBackground { 
   background:white; 
-  width:100%; z-index:-1;  
-  box-shadow: 0 5px 15px -8px black;
+  width:100%;
+  z-index:-1;
+  box-shadow:0 5px 15px -8px black;
 }
 #container { 
   width:100%; 
   margin:0 auto 0; 
-  font-family: 'Open Sans', sans-serif; }
+  font-family:'Open Sans', sans-serif; }
 
 #titel { 
   font-size:32px; 
   font-weight:300; 
-  font-family: 'Open Sans', sans-serif; 
+  font-family:'Open Sans', sans-serif;
   line-height:70px; 
   padding-left:28px; 
   margin-left:35px; 
@@ -75,7 +76,7 @@ header {
   position:absolute; 
   margin:auto 0 auto; 
   margin-top:100px;  
-  box-shadow: 0 5px 15px -10px rgba(0,0,0,0.5);
+  box-shadow:0 5px 15px -10px rgba(0,0,0,0.5);
   z-index:900;  
 }
 #headerBackground { 
@@ -89,18 +90,18 @@ header {
 #support { 
   font-weight:300;   
   text-decoration:none; 
-  font-family: 'Open Sans', sans-serif; 
+  font-family:'Open Sans', sans-serif;
   font-size:25px; 
-  transition: background-color 0.1s ease;  
-  color: white;
-  padding: 1.8em;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  clear: both;
+  transition:background-color 0.1s ease;
+  color:white;
+  padding:1.8em;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%);
+  -webkit-transform:translate(-50%, -50%);
+  -ms-transform:translate(-50%, -50%);
+  clear:both;
 
 
 
@@ -193,9 +194,8 @@ header {
   color:white;
   padding:13px 15px; /*box-shadow: 0px 5px 15px -8px black;*/  
   background-image: url("https://compleet.it/v3/img/icons/location.png"); 
-  background-repeat: 
-  no-repeat; 
-  background-position: left center; 
+  background-repeat:no-repeat;
+  background-position:left center;
   padding-left:40px;
 }
 
@@ -224,7 +224,7 @@ header {
   } #adres {
     left:30px; 
   }
-    
+
 }
 
 h1 { 
@@ -249,7 +249,7 @@ input[type=text] {
   font-size:18px; 
   font-weight:100; 
   border:1px solid #bfbfbf; 
-  outline: none; 
+  outline:none;
   margin-top:12px; 
 }
 input[type=submit] { 
@@ -269,13 +269,13 @@ input[type=submit] {
 }
 
 .result_button {
-    background: #0099d9;
+    background:#0099d9;
 
 }
 
 a .result_button {
-    background: #0099d9;
-    color: #fff !important;
+    background:#0099d9;
+    color:#fff !important;
 }
 
 p { 
@@ -302,7 +302,7 @@ a:hover {
 }
 
 .lower {
-   text-transform: lowercase;
+   text-transform:lowercase;
 }
 
 @media (max-width:768px) { 
