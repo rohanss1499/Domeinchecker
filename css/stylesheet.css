@@ -221,7 +221,6 @@ header {
   } #adres {
     left:30px; 
   }
-
 }
 
 h1 { 
@@ -234,7 +233,8 @@ h1 {
   text-align:center; 
   margin-bottom:40px; 
 }
-form { 
+
+form {
   margin:0 auto;
 }
 
@@ -249,6 +249,7 @@ input[type=text] {
   outline:none;
   margin-top:12px; 
 }
+
 input[type=submit] { 
   font-family:'Open Sans',sans-serif; 
   font-size:18px; 
@@ -267,7 +268,6 @@ input[type=submit] {
 
 .result_button {
     background:#0099d9;
-
 }
 
 a .result_button {
@@ -280,9 +280,7 @@ p {
   margin-top:40px; 
   font-size:30px; 
   font-weight:300;
-
 }
-
 .red { 
   color:#ff0202; 
 }
