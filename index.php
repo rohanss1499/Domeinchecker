@@ -95,7 +95,7 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
                                 echo "<tr>";
                                     echo "<th>"."Domain"."</th>";
                                     echo "<th>"."Status"."</th>";
-                                    echo "<th>"."Actei"."</th>";
+                                    echo "<th>"."Actie"."</th>";
                                     echo "<tr>";
                                     echo "</thead>";
                                     echo "</tbody>";

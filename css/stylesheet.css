@@ -204,7 +204,8 @@ header {
     padding-left:0; 
     padding-right:0;
     padding-bottom: 50px; 
-    left:0; right:0; 
+    left:0;
+    right:0;
     text-align:center; 
     margin:auto;
     transform: translate(0); 
@@ -263,7 +264,6 @@ input[type=submit] {
   color:white;
   margin-top:12px;
   cursor:pointer;
-
 }
 
 .result_button {
