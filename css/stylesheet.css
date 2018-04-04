@@ -255,7 +255,6 @@ input[type=text] {
 input[type=submit] { 
   font-family:'Open Sans',sans-serif; 
   font-size:18px; 
-  height:24px;
   font-weight:100;
   line-height:24px;
   padding:14px;
@@ -267,12 +266,7 @@ input[type=submit] {
   cursor:pointer;
 }
 
-.result_button {
-    background:#0099d9;
-}
-
 a .result_button {
-    background:#0099d9;
     color:#fff !important;
 }
 
