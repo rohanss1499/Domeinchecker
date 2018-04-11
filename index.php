@@ -127,5 +127,5 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
 				</div>
 			</form>
 		</div>
-	</body>
+    </body>
 </html>

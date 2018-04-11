@@ -267,7 +267,7 @@ input[type=submit] {
 }
 
 a .result_button {
-  color:#fff !important;
+  color:#fff !important; 
 }
 
 p { 
@@ -300,5 +300,4 @@ a:hover {
   h1 { 
     margin-top:50px; 
   }
-
 }
