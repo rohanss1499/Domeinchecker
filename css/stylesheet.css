@@ -240,7 +240,7 @@ form {
   margin:0 auto;
 }
 
-.country select {
+#support > .country > select {
     margin-top: 12px !important;
     height: 54px !important;
 }
