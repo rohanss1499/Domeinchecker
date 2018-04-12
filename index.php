@@ -65,13 +65,6 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
 			<div onclick="parent.location.href='http://www.compleet.it/'" id="logo1"></div><div onclick="parent.location.href='http://www.compleet.it/'" id="logo2"></div><div onclick="parent.location.href='http://www.compleet.it/'" id="logo3"></div>
 			<div onclick="parent.location.href='http://www.compleet.it/'" id="titel">Compleet IT</div>
 		</div>
-		<div id="info">
-			<div id="container">
-				<a id="adres" href="http://www.compleetit.nl" target="_parent">Voorstraat 55A ,  Voorschoten</a>
-				<a id="phone" href="tel:0717107402">071 -&shy; 710 74 02</a>
-				<a id="email" href="http://www.compleetit.nl" target="_parent">info@compleetit.nl</a>
-			</div>
-		</div>
 		<div id="support">
 			<form method="get">
 				<div class="container">
@@ -127,5 +120,12 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
 				</div>
 			</form>
 		</div>
+        <div id="footer">
+            <div id="container">
+                <a id="adres" href="http://www.compleetit.nl" target="_parent">Voorstraat 55A ,  Voorschoten</a>
+                <a id="phone" href="tel:0717107402">071 -&shy; 710 74 02</a>
+                <a id="email" href="http://www.compleetit.nl" target="_parent">info@compleetit.nl</a>
+            </div>
+        </div>
     </body>
 </html>

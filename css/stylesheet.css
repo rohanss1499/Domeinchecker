@@ -141,7 +141,7 @@ header {
 
 
 
-#info { 
+#footer {
   position:fixed; 
   bottom:0;
   width:100%; 
@@ -234,6 +234,11 @@ h1 {
   width:100%; 
   text-align:center; 
   margin-bottom:40px; 
+}
+
+hr .betaaldivider {
+    background: white !important;
+    border-top: 1.3px solid !important;
 }
 
 form {
