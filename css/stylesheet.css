@@ -188,7 +188,7 @@ header {
   font-weight:300; 
   color:white;
   padding:13px 15px; /*box-shadow: 0px 5px 15px -8px black;*/  
-  background-image: url("https://compleet.it/v3/img/icons/location.png"); 
+  background-image:url("https://compleet.it/v3/img/icons/location.png");
   background-repeat:no-repeat;
   background-position:left center;
   padding-left:40px;
@@ -201,12 +201,12 @@ header {
     width:100%; 
     padding-left:0; 
     padding-right:0;
-    padding-bottom: 50px; 
+    padding-bottom:50px;
     left:0;
     right:0;
     text-align:center; 
     margin:auto;
-    transform: translate(0); 
+    transform:translate(0);
     top:50px; 
     position:absolute;
     box-shadow:none; 
@@ -233,9 +233,9 @@ h1 {
   margin-bottom:40px; 
 }
 
-hr .betaaldivider {
-    background: white !important;
-    border-top: 1.3px solid !important;
+hr {
+    background:white !important;
+    border-top:1.3px solid !important;
 }
 
 form {
@@ -269,7 +269,7 @@ input[type=submit] {
 }
 
 a .result_button {
-  color:#fff !important; 
+  color:#fff !important;
 }
 
 p { 
