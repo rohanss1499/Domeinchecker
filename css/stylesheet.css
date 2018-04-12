@@ -95,7 +95,7 @@ header {
   transition:background-color 0.1s ease;
   color:white;
   padding:1.8em;
-  position:fixed;
+  position:absolute;
   left:50%;
   top:50%;
   transform:translate(-50%, -50%);
@@ -211,7 +211,7 @@ header {
     margin:auto;
     transform: translate(0); 
     top:50px; 
-    position:fixed;
+    position:absolute;
     box-shadow:none; 
   } #info {
     height:176px; 
