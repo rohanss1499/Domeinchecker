@@ -240,6 +240,11 @@ form {
   margin:0 auto;
 }
 
+.country select {
+    margin-top: 12px !important;
+    height: 54px !important;
+}
+
 input[type=text] { 
   font-family:'Open Sans',sans-serif; 
   line-height:24px; 
