@@ -3,7 +3,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,500,700,900,700italic,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
-
 html { 
   background:#333333;   
   background:url(../img/blurred.jpg) no-repeat center center fixed;
@@ -138,8 +137,6 @@ header {
   width:100%; 
   min-height:550px;  
 }
-
-
 
 #info {
   position:fixed;

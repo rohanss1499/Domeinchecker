@@ -31,18 +31,6 @@
 		</div>
 		<div id="support">
             <div class="new-cart-container__cart-row">
-                <div class="form-alert-container text-extra-small"></div>
-                <div class="text-with-divider">Factuurgegevens</div>
-                <input type="hidden" name="hash" value="6e0525b4ae97c5643335cecb46c7fc8011eb6857">
-                <div class="row row--xs">
-                    <div class="col-sm-12 col--xs">
-                        <div class="form-group form-group-md js-input-loader">
-                            <label class="text-tiny" for="inputCompany">Bedrijfsnaam <small> ( optioneel )</small></label>
-                            <input type="text" name="mainContactName" class="form-control input-md input-md--tip js-company-name delayed-module js-business-autocomplete" id="inputCompany" placeholder="bijv. De Vries B.V." autocomplete="off" data-remember-me="yes" value="" role="combobox" aria-autocomplete="list">
-                            <div class="js-autocomplete-container autocomplete-container"></div>
-                        </div>
-                    </div>
-                </div>
                 <div class="row row--xs">
                     <div class="col-sm-6 col--xs">
                         <div class="form-group form-group-md">
