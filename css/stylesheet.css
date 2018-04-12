@@ -95,7 +95,7 @@ header {
   transition:background-color 0.1s ease;
   color:white;
   padding:1.8em;
-  position:absolute;
+  position:relative;
   left:50%;
   top:50%;
   transform:translate(-50%, -50%);
@@ -141,14 +141,14 @@ header {
 
 
 
-#footer {
-  position:fixed; 
+#info {
+  position:fixed;
   bottom:0;
-  width:100%; 
-  margin:0; 
-  left:0; 
-  background:#222; 
-  height:60px; 
+  width:100%;
+  margin:0;
+  left:0;
+  background:#222;
+  height:60px;
   box-shadow:0 5px 15px -10px black;
   font-family:'Open Sans', sans-serif;
   clear:both;
@@ -211,7 +211,7 @@ header {
     margin:auto;
     transform: translate(0); 
     top:50px; 
-    position:fixed; 
+    position:relative;
     box-shadow:none; 
   } #info {
     height:176px; 

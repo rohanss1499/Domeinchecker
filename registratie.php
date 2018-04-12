@@ -367,17 +367,18 @@
                     <div class="text-with-divider">Betaalgegevens</div>
                     <hr class="betaaldivider">
                     <div class="js-payment-method-choose-container hidden">
-                        <div class="form-group form-group-md"><label class="text-tiny" for="inputBankAccount">Bankrekeningnummer</label><input class="form-control input-md input-md--tip js-account-number" type="text" name="incasso_bankaccount" id="inputBankAccount" value="" placeholder="bijv. NL12BUNQ0300065264"></div>
-                        <div class="form-group form-group-md"><label class="text-tiny" for="inputAccountHolder">Rekeninghouder</label><input type="text" name="incasso_bankholder" class="form-control input-md input-md--tip js-account-holder" id="inputAccountHolder" placeholder="bijv. De Vries B.V." value=""></div>
+                        <div class="form-group form-group-md col-lg-6"><label class="text-tiny" for="inputBankAccount">Bankrekeningnummer</label><input class="form-control input-md input-md--tip js-account-number" type="text" name="incasso_bankaccount" id="inputBankAccount" value="" placeholder="bijv. NL12BUNQ0300065264"></div>
+                        <div class="form-group form-group-md col-lg-6"><label class="text-tiny" for="inputAccountHolder">Rekeninghouder</label><input type="text" name="incasso_bankholder" class="form-control input-md input-md--tip js-account-holder" id="inputAccountHolder" placeholder="bijv. De Vries B.V." value=""></div>
                     </div>
                 </div>
-
-        <div id="footer">
-        <div id="container">
-            <a id="adres" href="http://www.compleetit.nl" target="_parent">Voorstraat 55A ,  Voorschoten</a>
-            <a id="phone" href="tel:0717107402">071 -&shy; 710 74 02</a>
-            <a id="email" href="http://www.compleetit.nl" target="_parent">info@compleetit.nl</a>
+            </div>
         </div>
-    </div>
+        <div id="info">
+            <div id="container">
+                <a id="adres" href="http://www.compleetit.nl" target="_parent">Voorstraat 55A ,  Voorschoten</a>
+                <a id="phone" href="tel:0717107402">071 -&shy; 710 74 02</a>
+                <a id="email" href="http://www.compleetit.nl" target="_parent">info@compleetit.nl</a>
+            </div>
+        </div>
     </body>
 </html>
