@@ -351,20 +351,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="js-payment-method-list">
-                    <div class="container">
-                    <div class="text-with-divider">Betaalgegevens</div>
-                    <hr class="betaaldivider">
-                    <div class="js-payment-method-choose-container hidden">
-                        <div class="row">
-                        <div class="col-lg-6">
-                        <div class="form-group form-group-md"><label class="text-tiny" for="inputBankAccount">Bankrekeningnummer</label><input class="form-control input-md input-md--tip js-account-number" type="text" name="incasso_bankaccount" id="inputBankAccount" value="" placeholder="bijv. NL12BUNQ0300065264"></div>
+                <div class="container">
+                    <div class="js-payment-method-list">
+                        <div class="text-with-divider">Betaalgegevens</div>
+                        <hr class="betaaldivider">
+                        <div class="js-payment-method-choose-container hidden">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                <div class="form-group form-group-md"><label class="text-tiny" for="inputBankAccount">Bankrekeningnummer</label><input class="form-control input-md input-md--tip js-account-number" type="text" name="incasso_bankaccount" id="inputBankAccount" value="" placeholder="bijv. NL12BUNQ0300065264"></div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group form-group-md"><label class="text-tiny" for="inputAccountHolder">Rekeninghouder</label><input type="text" name="incasso_bankholder" class="form-control input-md input-md--tip js-account-holder" id="inputAccountHolder" placeholder="bijv. De Vries B.V." value=""></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="form-group form-group-md"><label class="text-tiny" for="inputAccountHolder">Rekeninghouder</label><input type="text" name="incasso_bankholder" class="form-control input-md input-md--tip js-account-holder" id="inputAccountHolder" placeholder="bijv. De Vries B.V." value=""></div>
-                        </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
             </div>
