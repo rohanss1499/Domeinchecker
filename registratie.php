@@ -33,7 +33,6 @@
     </nav>
 </header>
 
-
 <div class="container">
     <div class="col-lg-12">
         <form>
@@ -41,23 +40,23 @@
                 <div class="form-group col-md-6">
                     <label class="text-tiny" for="inputFirstName">Voornaam</label>
                     <input type="text" name="mainContactInitials"
-                       class="form-control input-md input-md--tip js-first-name" id="inputFirstName" value=""
-                       placeholder="bijv. Jan" data-remember-me="yes">
+                    class="form-control input-md input-md--tip js-first-name" id="inputFirstName" value=""
+                    placeholder="bijv. Jan" data-remember-me="yes">
                 </div>
                 <div class="form-group col-md-6">
                     <label class="text-tiny" for="inputLastName">Achternaam</label>
                     <input type="text" name="mainContactLastName"
-                           class="form-control input-md input-md--tip js-last-name" id="inputLastName" value=""
-                           placeholder="bijv. de Vries" data-remember-me="yes">
+                    class="form-control input-md input-md--tip js-last-name" id="inputLastName" value=""
+                    placeholder="bijv. de Vries" data-remember-me="yes">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label class="text-tiny" for="inputPostalCode">Postcode</label>
                     <input type="text" name="mainContactAddressPostcode"
-                           data-supportedlang="[&quot;nl&quot;,&quot;gb&quot;]"
-                           class="form-control input-md input-md--tip postcode" id="inputPostalCode" value=""
-                           placeholder="bijv. 1234 AB" data-remember-me="yes">
+                    data-supportedlang="[&quot;nl&quot;,&quot;gb&quot;]"
+                    class="form-control input-md input-md--tip postcode" id="inputPostalCode" value=""
+                    placeholder="bijv. 1234 AB" data-remember-me="yes">
                 </div>
                 <div class="form-group col-md-6">
                     <label class="text-tiny" for="inputHouseNumber">Huisnr. + toev.</label>
@@ -73,16 +72,16 @@
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                <label class="text-tiny" for="inputAddressStreet">Straat</label>
-                <input type="text" class="form-control input-md input-md--tip street"
-                       name="mainContactAddressStreet" id="inputAddressStreet" value="" data-remember-me="yes"
-                       placeholder="bijv. Molenstraat">
+                    <label class="text-tiny" for="inputAddressStreet">Straat</label>
+                    <input type="text" class="form-control input-md input-md--tip street"
+                    name="mainContactAddressStreet" id="inputAddressStreet" value="" data-remember-me="yes"
+                    placeholder="bijv. Molenstraat">
                 </div>
                 <div class="form-group col-md-6">
                     <label class="text-tiny" for="inputAddressCity">Plaatsnaam</label>
                     <input type="text" class="form-control input-md input-md--tip city"
-                           name="mainContactAddressCity" id="inputAddressCity" value="" data-remember-me="yes"
-                           placeholder="bijv. Amsterdam">
+                    name="mainContactAddressCity" id="inputAddressCity" value="" data-remember-me="yes"
+                    placeholder="bijv. Amsterdam">
                 </div>
             </div>
             <div class="form-row">
@@ -365,15 +364,15 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group form-group-md"><label class="text-tiny" for="inputBankAccount">Bankrekeningnummer</label><input
-                                        class="form-control input-md input-md--tip js-account-number" type="text"
-                                        name="incasso_bankaccount" id="inputBankAccount" value=""
-                                        placeholder="bijv. NL12BUNQ0300065264"></div>
+                             class="form-control input-md input-md--tip js-account-number" type="text"
+                             name="incasso_bankaccount" id="inputBankAccount" value=""
+                             placeholder="bijv. NL12BUNQ0300065264"></div>
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group form-group-md"><label class="text-tiny" for="inputAccountHolder">Rekeninghouder</label><input
-                                        type="text" name="incasso_bankholder"
-                                        class="form-control input-md input-md--tip js-account-holder"
-                                        id="inputAccountHolder" placeholder="bijv. De Vries B.V." value=""></div>
+                              type="text" name="incasso_bankholder"
+                              class="form-control input-md input-md--tip js-account-holder"
+                              id="inputAccountHolder" placeholder="bijv. De Vries B.V." value=""></div>
                         </div>
                     </div>
                 </div>
