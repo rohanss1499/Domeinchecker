@@ -123,8 +123,8 @@ body {
     min-height: 550px;
 }
 
-.footer-background {
-    position: relative;
+.footer-background footer {
+    position: relative !important;
     width: 100%;
     background-color: #222 !important;
     height: 60px;
@@ -250,8 +250,7 @@ p {
 }
 
 a {
-    color: #ffffff;
-!important;
+    color: #ffffff !important;
     font-weight: 300;
     font-size: 18px;
     margin-top: 20px;
