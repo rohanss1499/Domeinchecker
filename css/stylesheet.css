@@ -209,7 +209,7 @@ form {
 
 input[type=text] {
     font-family: 'Open Sans', sans-serif;
-    color: #ffffff !important;
+    color: #000000 !important;
     line-height: 24px;
     width: 100%;
     padding: 14px;

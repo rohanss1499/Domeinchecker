@@ -44,27 +44,31 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
 ?>
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Compleet IT</title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width">
-		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
-		<!--Favicon-->
-		<link href="https://compleet.it/favicon.ico" rel="icon" type="image/x-icon"/>
-		<!--CSS-->
-		<link rel="stylesheet" href="css/stylesheet.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<!--JS-->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-	</head>
-	<body>
-		<div id="headerBackground">
-			<div onclick="parent.location.href='http://www.compleet.it/'" id="logo1"></div><div onclick="parent.location.href='http://www.compleet.it/'" id="logo2"></div><div onclick="parent.location.href='http://www.compleet.it/'" id="logo3"></div>
-			<div onclick="parent.location.href='http://www.compleet.it/'" id="titel">Compleet IT</div>
-		</div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Compleet IT</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+    <!--Favicon-->
+    <link href="https://compleet.it/favicon.ico" rel="icon" type="image/x-icon"/>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-sm bg-white navbar-dark fixed-top">
+        <div onclick="parent.location.href='http://www.compleet.it/'" id="logo1"></div>
+        <div onclick="parent.location.href='http://www.compleet.it/'" id="logo2"></div>
+        <div onclick="parent.location.href='http://www.compleet.it/'" id="logo3"></div>
+        <div onclick="parent.location.href='http://www.compleet.it/'" id="titel">Compleet IT</div>
+    </nav>
+</header>
+
 		<div id="support">
 			<form method="get">
 				<div class="container">
@@ -120,12 +124,12 @@ if(isset($_GET['domain']) && strlen($_GET['domain']) > 0){
 				</div>
 			</form>
 		</div>
-        <div id="info">
-            <div id="container">
-                <a id="adres" href="http://www.compleetit.nl" target="_parent">Voorstraat 55A ,  Voorschoten</a>
-                <a id="phone" href="tel:0717107402">071 -&shy; 710 74 02</a>
-                <a id="email" href="http://www.compleetit.nl" target="_parent">info@compleetit.nl</a>
-            </div>
-        </div>
+    <footer class="footer-background">
+    <section class="container">
+    <a id="adres" href="http://www.compleetit.nl" target="_parent">Voorstraat 55A , Voorschoten</a>
+    <a id="phone" href="tel:0717107402">071 -&shy; 710 74 02</a>
+    <a id="email" href="http://www.compleetit.nl" target="_parent">info@compleetit.nl</a>
+    </section>
+    </footer>
     </body>
 </html>
